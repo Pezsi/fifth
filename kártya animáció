@@ -1,0 +1,11 @@
+function getRandomText() {
+    const length = Math.floor(Math.random() * 10) + 5; // Véletlenszerű szöveghossz 5 és 15 karakter között
+    let randomText = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+    for (let i = 0; i < length; i++) {
+        randomText += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+
+    return randomText;
+}
